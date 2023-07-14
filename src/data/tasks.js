@@ -1,5 +1,3 @@
-// Aca solo voy a crear datos en un formato de arreglo, tambien puedo usar un archivo task.json
-
 export const tasks = [
   {
     id: 0,
