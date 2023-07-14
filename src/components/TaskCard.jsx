@@ -7,11 +7,11 @@ function TaskCard({ task }) {
   const {deleteTask} = useContext(TaskContext)
 
   return (
-    <div>
-      <h1>{task.tittle}</h1>
-      <p>{task.description}</p>
+    <div className="bg-gray-800 text-white p-4 rounded-md">
+      <h1 className="text-xl font-bold capitalize">{task.tittle}</h1>
+      <p className="text-gray-500 text-sm">{task.description}</p>
       <p>{task.id}</p>
-      <button onClick={() => {deleteTask(task.id)}}>Eliminar Tarea</button>
+      <button className="bg-red-800 px-2 py-1 rounded-md mt-4 hover:bg-red-600" onClick={() => {deleteTask(task.id)}}>Eliminar Tarea</button>
     </div>
   );
 }
